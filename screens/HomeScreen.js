@@ -36,16 +36,16 @@ const HomeScreen = () => {
 
             {/* SEARCH BAR */}
             <View className="flex-row items-center mx-4 pb-2 space-x-2">
-                <View className="flex-row space-x-2 bg-gray-200 p-2 grow">
+                <View className="flex-row space-x-2 bg-gray-200 p-2 flex-1">
                     <MagnifyingGlassIcon color="grey" />
-                    <TextInput placeholder='Restaurants and cuisines'
+                    <TextInput className=" flex-1" placeholder='Restaurants and cuisines'
                         keyboardType='default' />
                 </View>
                 <AdjustmentsVerticalIcon color="#00CCBB" />
             </View>
 
             {/* BODY */}
-            <ScrollView className="bg-gray-100 pb-24" >
+            <ScrollView contentContainerStyle={{ paddingBottom: 100 }} className="bg-gray-100" >
                 {/* CATEGORIES */}
                 <Categories />
 

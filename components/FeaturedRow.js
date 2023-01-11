@@ -13,7 +13,51 @@ const FeaturedRow = ({ id, title, description }) => {
             <Text className="text-xs text-gray-400 px-4">{description}</Text>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} className="px-4 pt-4">
                 {/* RESTAURANT CARD */}
-                <RestaurantCard />
+                <RestaurantCard
+                    id={123}
+                    title="yo"
+                    rating={4.5}
+                    imgUrl="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                    genre="Japanese"
+                    address="Karnal"
+                    dishes={[]}
+                    long={20}
+                    lat={20}
+                />
+                <RestaurantCard
+                    id={123}
+                    title="yo"
+                    rating={4.5}
+                    imgUrl="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                    genre="Japanese"
+                    address="Karnal"
+                    dishes={[]}
+                    long={20}
+                    lat={20}
+                />
+                <RestaurantCard
+                    id={123}
+                    title="yo"
+                    rating={4.5}
+                    imgUrl="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                    genre="Japanese"
+                    address="Karnal"
+                    dishes={[]}
+                    long={20}
+                    lat={20}
+                />
+                <RestaurantCard
+                    id={123}
+                    title="yo"
+                    rating={4.5}
+                    imgUrl="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                    genre="Japanese"
+                    address="Karnal"
+                    dishes={[]}
+                    long={20}
+                    lat={20}
+                />
+
             </ScrollView>
 
         </View>
