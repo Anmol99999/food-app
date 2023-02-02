@@ -2,8 +2,9 @@ import { View, Text, ScrollView } from 'react-native'
 import React from 'react'
 import { ArrowRightIcon } from 'react-native-heroicons/outline'
 import RestaurantCard from './RestaurantCard'
+import { urlFor } from "../sanity"
 
-const FeaturedRow = ({ id, title, description }) => {
+const FeaturedRow = ({ id, title, description, restaurants }) => {
     return (
         <View>
             <View className="mt-4 flex-row items-center justify-between px-4">
@@ -12,6 +13,19 @@ const FeaturedRow = ({ id, title, description }) => {
             </View>
             <Text className="text-xs text-gray-400 px-4">{description}</Text>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} className="px-4 pt-4">
+                {
+                    restaurants?.map(restaurant => <RestaurantCard
+                        id={restaurant._id}
+                        title={restaurant.name}
+                        rating={restaurant.rating}
+                        imgUrl={urlFor(restaurant.image).url()}
+                        genre={restaurant.category}
+                        address={restaurant.address}
+                        dishes={[]}
+                        long={restaurant.long}
+                        lat={restaurant.lat}
+                    />)
+                }
                 {/* RESTAURANT CARD */}
                 <RestaurantCard
                     id={123}
