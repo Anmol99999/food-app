@@ -6,6 +6,6 @@ jobs:
      steps:
       - name: Run
         run:
-         cd ..
-         Get-Location
+           cd ..
+           Get-Location
         shell: pwsh
