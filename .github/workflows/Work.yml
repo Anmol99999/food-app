@@ -7,5 +7,4 @@ jobs:
       - name: Run
         run:
            cd ..
-           Get-Location
         shell: pwsh
