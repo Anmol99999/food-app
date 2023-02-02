@@ -5,4 +5,4 @@ jobs:
      runs-on: ubuntu-latest
      steps:
       - name: Run
-        run: echo "wow hello"
+        run: ls
