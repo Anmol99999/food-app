@@ -1,9 +1,8 @@
+name: Super
 on: push 
-
 jobs: 
-  work:
+  work_cool:
      runs-on: ubuntu-latest
-     environment: Dev
-  
-  steps:
-    - uses: ls
+     steps:
+      - name: Run
+        uses: echo "wow hello"
