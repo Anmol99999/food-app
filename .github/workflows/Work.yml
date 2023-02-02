@@ -5,4 +5,5 @@ jobs:
      runs-on: ubuntu-latest
      steps:
       - name: Run
-        run: ls
+        run: Get-Location
+        shell: pwsh
